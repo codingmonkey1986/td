@@ -9,17 +9,17 @@ public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherSe
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{
          //   JPAConfig.class,
-//            LDAPConfig.class,
-//            OAuth2AuthorizationServerConfig.class,
-//            OAuth2ResourceServerConfig.class,
-//            SecurityConfig.class
+            LDAPConfig.class,
+           OAuth2AuthorizationServerConfig.class,
+           OAuth2ResourceServerConfig.class,
+            SecurityConfig.class
         };
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {        
         return new Class[]{
-       //     AppConfig.class
+            AppConfig.class
         };
     }
 
