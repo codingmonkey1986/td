@@ -26,13 +26,13 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients
                 .inMemory()
-                .withClient("mgiaos")
+                .withClient("test")
                 .authorizedGrantTypes("authorization_code", "implicit", "client_credentials")
                 .authorities("ROLE_APP")
                 .scopes("read", "write")
                 .secret("secret")
                 .and()
-                .withClient("mgiaos")
+                .withClient("test")
                 .authorizedGrantTypes("authorization_code", "implicit", "password", "refresh_token")
                 .authorities("ROLE_APP")
                 .scopes("read", "write")
